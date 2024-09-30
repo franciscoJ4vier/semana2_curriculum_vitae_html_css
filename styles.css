@@ -1,0 +1,156 @@
+/* Estilos generales */
+body {
+    background-color: #838D68; /* Fondo */
+    color: #13121b; /* Texto */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px; /* Máximo ancho */
+    margin: 0 auto; /* Centramos el contenido */
+    padding-top: 70px; /* Espacio para el menú fijo */
+    text-align: justify; /* Justificamos el texto */
+}
+
+.fixed-image {
+    position: fixed; /* Hace que la imagen se mantenga fija en la pantalla */
+    top: 55px; /* Distancia desde el borde superior */
+    left: 20px; /* Distancia desde el borde izquierdo */
+    width: 100px; /* Puedes ajustar el tamaño */
+    height: auto; /* Mantiene la proporción de la imagen */
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #6daa8100;
+    transition: transform 0.3s; /* Transición suave */
+}
+
+img:hover {
+    transform: scale(1.1); /* Aumenta la imagen al pasar el cursor */
+}
+
+a {
+    color: #13121b; /* Color de enlaces */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffffff; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos del menú de navegación */
+nav {
+    background: rgb(255, 255, 255); /* Fondo semitransparente */
+    padding: 10px 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para el nav */
+}
+
+nav a {
+    margin: 0 15px; /* Espaciado entre enlaces */
+    font-weight: bold;
+}
+
+header {
+    padding-top: 20px; /* Espaciado superior para el contenido */
+    text-align: center;
+}
+
+main {
+    padding: 20px; /* Espaciado para el contenido principal */
+}
+
+section {
+    margin-bottom: 30px; /* Espaciado entre secciones */
+    padding: 10px;
+    border-radius: 8px; /* Bordes redondeados */
+    background: #ffffff; /* Fondo blanco */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilo para la sección de habilidades */
+.skills-container {
+    display: flex; /* Flexbox para el diseño */
+    justify-content: space-between; /* Espaciado entre secciones */
+    flex-wrap: wrap; /* Permite que se ajusten en diferentes tamaños */
+}
+
+.skills-section {
+    flex: 1; /* Cada sección ocupa un espacio igual */
+    margin: 10px; /* Margen entre secciones */
+    padding: 10px;
+    background: #f9f9f9; /* Fondo claro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+
+/* Enlaces de contacto */
+.contact {
+    text-align: center; /* Centramos el contenido */
+    margin: 20px 0; /* Margen superior e inferior */
+    padding: 15px; /* Espaciado interno */
+    background: #ffffff; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+
+/* Estilos de pie de página */
+footer {
+    background-color: #f1f1f1; /* Fondo del pie de página */
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Centramos el texto */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Coloca los enlaces en columna */
+        align-items: center; /* Centra los enlaces */
+    }
+
+    .skills-container {
+        flex-direction: column; /* Cambia la dirección a columna */
+    }
+
+    .skills-section {
+        margin: 5px; /* Menos margen en pantallas pequeñas */
+    }
+
+    section {
+        padding: 15px; /* Menos padding en secciones */
+    }
+
+    nav a {
+        margin: 10px 0; /* Espaciado vertical entre enlaces */
+    }
+}
+
+/* Estilos para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    header {
+        font-size: 1.2em; /* Tamaño de fuente más pequeño */
+    }
+
+    section {
+        padding: 10px; /* Aumenta el padding */
+    }
+
+    img {
+        width: 100px; /* Ajustar el tamaño de las imágenes */
+    }
+}

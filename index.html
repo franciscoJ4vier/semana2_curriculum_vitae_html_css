@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Francisco Javier Dávalos Lesmo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a id="top"></a>
+    <div class="container">
+        <img src="img/perfil.jpg" alt="Perfil" class="fixed-image">
+
+        <header>
+            <nav>
+                <a href="#intro">Sobre mí</a>
+                <a href="#expe">Experiencia</a>
+                <a href="#edu">Educación</a>
+                <a href="#habi">Habilidades</a>
+            </nav>
+            <h1>Francisco Javier Dávalos Lesmo</h1>
+            <h2>Artista Multidisciplinario y Programador Autodidacta</h2>
+        </header>
+        
+        <main>
+            <section id="intro">
+                <h3>¡Hola! 👋</h3>
+                <p>
+                    Soy un artista multidisciplinario, ilustrador y desarrollador web en formación, interesado en las artes gráficas y sonoras. Me apasionan las aplicaciones interactivas, la realidad virtual y crear experiencias significativas. Busco desarrollar tanto servicios empresariales como juegos que ofrezcan entretenimiento y valor.
+                    <br><br>
+                    Cuento con conocimientos en marketing y lógica de programación, lo que me ayuda a abordar problemas de manera efectiva. 
+                    <br><br>
+                    En mi tiempo libre, edito videos, colecciono piedras raras y exploro la naturaleza, actividades que me inspiran en mis proyectos.
+                </p>
+            </section>
+
+            <section id="expe">
+                <h2>Experiencia últimos 3 años</h2>
+                <ul>
+                    <li>
+                        AZA.py - Director de arte y Diseñador Gráfico Freelance.
+                        <br />
+                        Agosto 2022 - Presente
+                        <ul>
+                            <li>Director de arte para campañas publicitarias en medios digitales y tradicionales.</li>
+                            <li>Diseñador de Keyvisual publicitarios y realizador de animaciones de video alineados gráficamente bajo estándares de marca.</li>
+                            <li>Creación de propuestas de comunicaciones visuales y estrategias de branding para marcas.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="edu">
+                <h2>Educación</h2>
+                <ul>
+                    <li>FCEA - Estudiante de la carrera de ingeniería en informática empresarial. <br />Febrero 2023 - Presente</li>
+                    <li>Desarrollo Joven - Ingeniero Web en Python.<br />Septiembre 2024 - Presente</li>
+                    <li>SNPP - Operador de Ofimática. <br />Agosto 2024 - Septiembre 2024</li>
+                    <li>Platzi - Estudio y tengo certificados en cursos de diseño y programación. <br />Julio 2024 - Presente</li>
+                    <li>Sinafocal - Curso de Electricidad Domiciliaria. <br />Octubre 2022 - Diciembre 2022</li>
+                    <li>Instituto de Diseño y Tecnología (IDT) - Curso de Domótica y Automatización con Arduino <br />Enero 2021 - Diciembre 2022</li>
+                </ul>
+            </section>
+
+            <section class="skills-container" id="habi">
+                <div class="skills-section habilidades-blandas">
+                    <h2>Habilidades Blandas</h2>
+                    <ul>
+                        <li>Comunicación</li>
+                        <li>Trabajo en equipo</li>
+                        <li>Creatividad</li>
+                    </ul>
+                </div>
+                <div class="skills-section habilidades-tecnicas">
+                    <h2>Habilidades Técnicas</h2>
+                    <ul>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>HTML/CSS</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <div class="contact">
+            <a href="https://www.linkedin.com/in/francisco-d-l-7b3b02325" target="_blank">Mi perfil de LinkedIn</a><br />
+            <a href="mailto:franrap2018@gmail.com">franrap2018@gmail.com</a>
+        </div>
+
+        <a href="#top">Ir al inicio</a>
+    </div>
+
+    <footer>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="https://github.com/franciscoJ4vier" target="_blank">Visita mi GitHub</a>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                const navHeight = document.querySelector('nav').offsetHeight; // Altura de la barra de navegación
+                const offset = 20; // Espacio adicional de 20px
+
+                const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navHeight - offset;
+
+                window.scrollTo({
+                    top: elementPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
