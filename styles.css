@@ -12,7 +12,7 @@ body {
     max-width: 800px; /* Máximo ancho */
     margin: 0 auto; /* Centramos el contenido */
     padding-top: 70px; /* Espacio para el menú fijo */
-    text-align: justify; /* Justificamos el texto */
+    text-align: center;
     padding: 2rem;
 }
 
@@ -154,11 +154,13 @@ footer {
     img {
         width: 100px; /* Ajustar el tamaño de las imágenes */
     }
-    #foto {
+}
+#foto {
   width: 15rem;
   border: 0.5rem solid var(--bordeimg);
   border-radius: 50%;
   left: 50px;
   margin-top: 2rem;
 }
-}
+
+
