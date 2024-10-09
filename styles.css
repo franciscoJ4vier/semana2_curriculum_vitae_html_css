@@ -19,7 +19,7 @@ body {
 .fixed-image {
     position: fixed; /* Hace que la imagen se mantenga fija en la pantalla */
     top: 55px; /* Distancia desde el borde superior */
-    left: 20px; /* Distancia desde el borde izquierdo */
+    left: 50px; /* Distancia desde el borde izquierdo */
     width: 100px; /* Puedes ajustar el tamaño */
     height: auto; /* Mantiene la proporción de la imagen */
     z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
